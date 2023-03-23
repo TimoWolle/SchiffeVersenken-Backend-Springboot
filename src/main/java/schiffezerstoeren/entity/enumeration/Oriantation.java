@@ -1,4 +1,4 @@
-package entity.enumeration;
+package schiffezerstoeren.entity.enumeration;
 
 public enum Oriantation {
     HORIZONTAL,

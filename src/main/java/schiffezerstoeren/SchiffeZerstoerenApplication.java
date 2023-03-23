@@ -1,15 +1,13 @@
-package project.staedtezerstoeren;
+package schiffezerstoeren;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StaedteZerstoerenApplication {
+public class SchiffeZerstoerenApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(StaedteZerstoerenApplication.class, args);
-
-        DrawUtil sad = new DrawUtil();
+        SpringApplication.run(SchiffeZerstoerenApplication.class, args);
     }
 
 }

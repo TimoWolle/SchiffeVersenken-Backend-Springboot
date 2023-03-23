@@ -1,4 +1,4 @@
-package entity;
+package schiffezerstoeren.entity;
 import lombok.*;
 import jakarta.persistence.Embeddable;
 

@@ -1,6 +1,5 @@
-package entity;
-import entity.enumeration.Oriantation;
-import entity.enumeration.ShipType;
+package schiffezerstoeren.entity;
+import schiffezerstoeren.entity.enumeration.Player;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -10,14 +9,13 @@ import lombok.*;
 @AllArgsConstructor
 
 @Entity
-public class Ship{
+public class Turn {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Integer turn;
     @Enumerated(value = EnumType.STRING)
-    private Oriantation oriantation;
-    @Enumerated(value = EnumType.STRING)
-    private ShipType shipType;
+    private Player player;
     private Coordinates coordinates;
-    private Boolean isDestroyed = false;
+    private Boolean hit;
 }

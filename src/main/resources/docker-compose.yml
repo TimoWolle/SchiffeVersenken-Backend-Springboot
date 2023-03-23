@@ -1,15 +1,15 @@
 version: "3.7"
 services:
 
-  # todo-database
-  todo-database:
+  # schiffezerstoeren-database
+  schiffezerstoeren-database:
     image: postgres:latest
-    container_name: todo-database
+    container_name: schiffezerstoeren-database
     ports:
-      - 5432:5432
+      - 5433:5432
     environment:
       TZ: Europe/Berlin
-      POSTGRES_USER: todo
-      POSTGRES_PASSWORD: todo
-      POSTGRES_DB: todo
+      POSTGRES_USER: schiffezerstoeren
+      POSTGRES_PASSWORD: schiffezerstoeren
+      POSTGRES_DB: schiffezerstoeren
     restart: always

@@ -1,16 +1,11 @@
-package project.staedtezerstoeren;
+package schiffezerstoeren;
 
-import entity.Field;
-import entity.Game;
-import entity.enumeration.Oriantation;
-import entity.enumeration.ShipType;
-import jakarta.persistence.*;
+import schiffezerstoeren.entity.Field;
+import schiffezerstoeren.entity.Game;
 import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public final class DrawUtil {
 
     /**
