@@ -1,15 +1,15 @@
 version: "3.7"
 services:
 
-  # schiffezerstoeren-database
-  schiffezerstoeren-database:
+  # schiffeversenken-database
+  schiffeversenken-database:
     image: postgres:latest
-    container_name: schiffezerstoeren-database
+    container_name: schiffeversenken-database
     ports:
       - 5433:5432
     environment:
       TZ: Europe/Berlin
-      POSTGRES_USER: schiffezerstoeren
-      POSTGRES_PASSWORD: schiffezerstoeren
-      POSTGRES_DB: schiffezerstoeren
+      POSTGRES_USER: schiffeversenken
+      POSTGRES_PASSWORD: schiffeversenken
+      POSTGRES_DB: schiffeversenken
     restart: always

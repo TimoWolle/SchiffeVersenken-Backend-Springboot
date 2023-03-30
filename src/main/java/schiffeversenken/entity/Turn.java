@@ -1,5 +1,5 @@
-package schiffezerstoeren.entity;
-import schiffezerstoeren.entity.enumeration.Player;
+package schiffeversenken.entity;
+import schiffeversenken.entity.enumeration.Player;
 import jakarta.persistence.*;
 import lombok.*;
 

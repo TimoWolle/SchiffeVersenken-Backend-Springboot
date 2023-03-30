@@ -1,7 +1,7 @@
-package schiffezerstoeren;
+package schiffeversenken;
 
-import schiffezerstoeren.entity.Field;
-import schiffezerstoeren.entity.Game;
+import schiffeversenken.entity.Field;
+import schiffeversenken.entity.Game;
 import lombok.*;
 
 @Getter
@@ -34,7 +34,7 @@ public final class DrawUtil {
     public static void drawField(Field field) {
         final String FIELD_EMPTY  = "□";
         final String FIELD_FILLED = "■";
-
+        //2d Array Ocean, alles mit wasser +1 wegen zahlen/ Array automatisch vorbefüllen
         // ...
     }
 }

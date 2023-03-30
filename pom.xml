@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>project</groupId>
-    <artifactId>SchiffeZerstoeren</artifactId>
+    <artifactId>SchiffeVersenken</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SchiffeZerstoeren</name>
-    <description>SchiffeZerstoeren</description>
+    <name>SchiffeVersenken</name>
+    <description>SchiffeVersenken</description>
     <properties>
         <java.version>19</java.version>
     </properties>

@@ -1,4 +1,4 @@
-package schiffezerstoeren.entity;
+package schiffeversenken.entity;
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
-package schiffezerstoeren.entity;
-import schiffezerstoeren.entity.enumeration.Oriantation;
-import schiffezerstoeren.entity.enumeration.ShipType;
+package schiffeversenken.entity;
+import schiffeversenken.entity.enumeration.Oriantation;
+import schiffeversenken.entity.enumeration.ShipType;
 import jakarta.persistence.*;
 import lombok.*;
 

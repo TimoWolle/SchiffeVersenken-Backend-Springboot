@@ -1,13 +1,13 @@
-package schiffezerstoeren;
+package schiffeversenken;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SchiffeZerstoerenApplication {
+public class SchiffeVersenkenApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SchiffeZerstoerenApplication.class, args);
+        SpringApplication.run(SchiffeVersenkenApplication.class, args);
     }
 
 }

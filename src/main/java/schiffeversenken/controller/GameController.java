@@ -1,14 +1,14 @@
-package schiffezerstoeren.controller;
+package schiffeversenken.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import schiffezerstoeren.entity.Game;
-import schiffezerstoeren.service.GameService;
+import schiffeversenken.entity.Game;
+import schiffeversenken.service.GameService;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/schiffezerstoeren")
+@RequestMapping("/schiffeversenken")
 @RequiredArgsConstructor
 public class GameController {
     private final GameService gameService;

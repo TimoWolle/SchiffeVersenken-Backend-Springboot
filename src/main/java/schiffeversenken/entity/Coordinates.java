@@ -1,4 +1,4 @@
-package schiffezerstoeren.entity;
+package schiffeversenken.entity;
 import lombok.*;
 import jakarta.persistence.Embeddable;
 

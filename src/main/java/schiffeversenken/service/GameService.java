@@ -1,12 +1,13 @@
-package schiffezerstoeren.service;
+package schiffeversenken.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import schiffezerstoeren.entity.Game;
+import schiffeversenken.entity.Coordinates;
+import schiffeversenken.entity.Game;
 //import entity.GameStatus;
-import schiffezerstoeren.entity.Ship;
-import schiffezerstoeren.repository.GameRepository;
-import schiffezerstoeren.repository.ShipRepository;
+import schiffeversenken.entity.Ship;
+import schiffeversenken.repository.GameRepository;
+import schiffeversenken.repository.ShipRepository;
 
 import java.util.List;
 
@@ -20,8 +21,17 @@ public class GameService {
         return gameRepository.save(_game);
     }
 
-    public Game shoot(Game _game){
-        return gameRepository.save(_game);
+    public Game shoot(Long _game_id, Coordinates _coordinates){
+        Game game = gameRepository.findById(_game_id).orElseThrow();
+        if (game.getWinner()!=null) return game;
+
+
+
+        game.getFieldPlayerTwo().getShips();
+
+
+
+        return gameRepository.save(game);
     }
 
 
@@ -34,6 +44,7 @@ public class GameService {
         Game game = gameRepository.findById(_game_id).orElseThrow();
         game.getFieldPlayerOne().setShips(_placedships);
 
-        //game.getFIeldPlayerTwo().setShips(_placedships);
+        //game.getFIeldPlayerTwo().setShips(_placedships); (KI / SHELFED IN GIT)
+        return gameRepository.save(game);
     }
 }
